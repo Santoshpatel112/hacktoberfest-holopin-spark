@@ -96,6 +96,9 @@ export const HeroSection = () => {
             size="lg"
             variant="outline"
             className="border-accent text-accent hover:bg-accent hover:text-accent-foreground text-lg px-8 py-6"
+            onClick={() => {
+              document.getElementById("community")?.scrollIntoView({ behavior: "smooth" });
+            }}
           >
             <Github className="mr-2 h-5 w-5" />
             Connect GitHub
