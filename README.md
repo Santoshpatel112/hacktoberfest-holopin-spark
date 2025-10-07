@@ -7,6 +7,7 @@
 
 A modern, fully-featured React application built with TypeScript, Vite, and shadcn/ui components. Perfect for rapid prototyping and production-ready applications.
 
+
 ## 🚀 Features
 
 - ⚡ **Vite** - Lightning fast build tool
