@@ -1,9 +1,27 @@
 # React + TypeScript + Vite + shadcn/ui Starter
 
-[![Hacktoberfest](https://img.shields.io/badge/Hacktoberfest-2024-orange.svg)](https://hacktoberfest.com/)
+[![Hacktoberfest](https://img.shields.io/badge/Hacktoberfest-2025-orange.svg)](https://hacktoberfest.com/)
 [![Open Source](https://badges.frapsoft.com/os/v1/open-source.svg?v=103)](https://opensource.org/)
 [![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
+
+<div align="center">
+  <img src="https://cdn.jsdelivr.net/gh/Santoshpatel100/hacktoberfest-holopin-spark@main/public/hacktoberfest-logo.png" alt="Hacktoberfest Logo" width="300" height="100" style="animation: pulse 2s infinite;"/>
+  <br>
+  <img src="https://www.holopin.io/logo.png" alt="Holopin.io Logo" width="200" height="80" style="animation: bounce 2s infinite;"/>
+</div>
+
+<style>
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+  100% { transform: scale(1); }
+}
+@keyframes bounce {
+  0%, 20%, 40%, 60%, 80%, 100% { transform: translateY(0); }
+  10%, 30%, 50%, 70%, 90% { transform: translateY(-10px); }
+}
+</style>
 
 A modern, fully-featured React application built with TypeScript, Vite, and shadcn/ui components. Perfect for rapid prototyping and production-ready applications.
 

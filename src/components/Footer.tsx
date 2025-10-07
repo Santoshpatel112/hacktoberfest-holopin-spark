@@ -2,10 +2,10 @@ import { Github, Linkedin, Twitter, Mail } from "lucide-react";
 import { motion } from "framer-motion";
 
 const socialLinks = [
-  { icon: Twitter, label: "Twitter", href: "https://twitter.com" },
-  { icon: Github, label: "GitHub", href: "https://github.com" },
-  { icon: Linkedin, label: "LinkedIn", href: "https://linkedin.com" },
-  { icon: Mail, label: "Email", href: "mailto:hello@hacktoberfest.com" },
+  { icon: Twitter, label: "Twitter", href: "https://x.com/Santoshp3259330" },
+  { icon: Github, label: "GitHub", href: "https://github.com/Santoshpatel112" },
+  { icon: Linkedin, label: "LinkedIn", href: "https://www.linkedin.com/in/santosh-patel112/" },
+  { icon: Mail, label: "Email", href: "mailto:santoshpatelvns5@gmail.com" },
 ];
 
 const footerLinks = {
