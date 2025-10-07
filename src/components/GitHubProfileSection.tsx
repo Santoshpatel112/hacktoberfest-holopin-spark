@@ -26,14 +26,24 @@ export const GitHubProfileSection = () => {
       if (!response.ok) throw new Error("User not found");
       const data = await response.json();
       setProfile(data);
-      toast.success("Profile loaded successfully!");
+      localStorage.setItem("githubProfile", JSON.stringify(data));
+      window.dispatchEvent(new Event("profileUpdated"));
+      toast.success("🎉 Welcome to the community!");
     } catch (error) {
-      toast.error("Failed to fetch profile. Please try again.");
+      toast.error("User not found. Please check the username.");
       setProfile(null);
     } finally {
       setLoading(false);
     }
   };
+
+  useState(() => {
+    const savedProfile = localStorage.getItem("githubProfile");
+    if (savedProfile) {
+      setProfile(JSON.parse(savedProfile));
+      setUsername(JSON.parse(savedProfile).login);
+    }
+  });
 
   return (
     <section id="community" className="py-24 relative bg-muted/30" ref={ref}>
@@ -81,52 +91,59 @@ export const GitHubProfileSection = () => {
               <motion.div
                 initial={{ opacity: 0, scale: 0.95 }}
                 animate={{ opacity: 1, scale: 1 }}
+                transition={{ type: "spring", duration: 0.5 }}
                 className="flex flex-col items-center text-center"
               >
-                <img
+                <motion.img
                   src={profile.avatar_url}
                   alt={profile.name}
                   className="w-32 h-32 rounded-full border-4 border-primary mb-4 glow-pink"
+                  whileHover={{ scale: 1.05 }}
+                  transition={{ type: "spring", stiffness: 300 }}
                 />
                 <h3 className="text-2xl font-bold mb-2">{profile.name || profile.login}</h3>
-                <p className="text-muted-foreground mb-4">{profile.bio}</p>
+                <p className="text-muted-foreground mb-4">{profile.bio || "Open source contributor"}</p>
                 
                 <div className="flex gap-6 mb-6 text-sm">
-                  <div>
-                    <p className="font-bold text-xl">{profile.public_repos}</p>
+                  <motion.div whileHover={{ scale: 1.1 }}>
+                    <p className="font-bold text-xl gradient-text">{profile.public_repos}</p>
                     <p className="text-muted-foreground">Repositories</p>
-                  </div>
-                  <div>
-                    <p className="font-bold text-xl">{profile.followers}</p>
+                  </motion.div>
+                  <motion.div whileHover={{ scale: 1.1 }}>
+                    <p className="font-bold text-xl gradient-text">{profile.followers}</p>
                     <p className="text-muted-foreground">Followers</p>
-                  </div>
-                  <div>
-                    <p className="font-bold text-xl">{profile.following}</p>
+                  </motion.div>
+                  <motion.div whileHover={{ scale: 1.1 }}>
+                    <p className="font-bold text-xl gradient-text">{profile.following}</p>
                     <p className="text-muted-foreground">Following</p>
-                  </div>
+                  </motion.div>
                 </div>
 
-                <div className="flex gap-3">
+                <div className="flex flex-wrap gap-3 justify-center">
                   <Button
-                    variant="outline"
+                    variant="default"
                     size="sm"
                     asChild
+                    className="bg-primary hover:bg-primary/90 glow-pink"
                   >
                     <a href={profile.html_url} target="_blank" rel="noopener noreferrer">
                       <Github className="mr-2 h-4 w-4" />
-                      View Profile
+                      View GitHub Profile
                       <ExternalLink className="ml-2 h-3 w-3" />
                     </a>
                   </Button>
                   <Button
                     variant="outline"
                     size="sm"
-                    asChild
+                    onClick={() => {
+                      localStorage.removeItem("githubProfile");
+                      setProfile(null);
+                      setUsername("");
+                      window.dispatchEvent(new Event("profileUpdated"));
+                      toast.success("Profile cleared");
+                    }}
                   >
-                    <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
-                      <Linkedin className="mr-2 h-4 w-4" />
-                      LinkedIn
-                    </a>
+                    Clear Profile
                   </Button>
                 </div>
               </motion.div>
