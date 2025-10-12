@@ -130,4 +130,55 @@ All colors MUST be HSL.
   .glow-cyan {
     box-shadow: var(--glow-cyan);
   }
+
+  /* Contributors animations */
+  .animate-float {
+    animation: float 3s ease-in-out infinite;
+  }
+
+  .animate-pulse-glow {
+    animation: pulse-glow 2s ease-in-out infinite;
+  }
+
+  .animate-bounce-subtle {
+    animation: bounce-subtle 2s ease-in-out infinite;
+  }
+
+  @keyframes float {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+  }
+
+  @keyframes pulse-glow {
+    0%, 100% { 
+      box-shadow: 0 0 5px hsla(330, 81%, 60%, 0.3);
+    }
+    50% { 
+      box-shadow: 0 0 20px hsla(330, 81%, 60%, 0.6), 0 0 30px hsla(330, 81%, 60%, 0.4);
+    }
+  }
+
+  @keyframes bounce-subtle {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-5px); }
+  }
+
+  /* Scrollbar styling for contributors panel */
+  .contributors-scroll::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  .contributors-scroll::-webkit-scrollbar-track {
+    background: hsl(var(--muted));
+    border-radius: 3px;
+  }
+
+  .contributors-scroll::-webkit-scrollbar-thumb {
+    background: hsl(var(--primary));
+    border-radius: 3px;
+  }
+
+  .contributors-scroll::-webkit-scrollbar-thumb:hover {
+    background: hsl(var(--primary) / 0.8);
+  }
 }
