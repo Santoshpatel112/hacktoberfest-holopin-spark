@@ -14,7 +14,7 @@ interface ContributorsProps {
 export const Contributors = ({ isOpen, onClose }: ContributorsProps) => {
   const [searchTerm, setSearchTerm] = useState("");
   const [sortBy, setSortBy] = useState<"recent" | "contributions" | "name">("recent");
-  const { contributors, getTotalContributions } = useContributors();
+  const { contributors, getTotalContributions, debugContributors, clearAllContributors } = useContributors();
 
   // Filter and sort contributors
   const filteredContributors = useMemo(() => {
@@ -273,7 +273,7 @@ export const Contributors = ({ isOpen, onClose }: ContributorsProps) => {
             </div>
 
             {/* Footer */}
-            <div className="p-4 border-t border-border bg-muted/30">
+            <div className="p-4 border-t border-border bg-muted/30 space-y-2">
               <motion.a
                 href="#community"
                 onClick={(e) => {
@@ -287,6 +287,28 @@ export const Contributors = ({ isOpen, onClose }: ContributorsProps) => {
               >
                 Join Our Community
               </motion.a>
+              
+              {/* Debug buttons - only show in development */}
+              {process.env.NODE_ENV === 'development' && (
+                <div className="flex gap-2">
+                  <Button
+                    variant="outline"
+                    size="sm"
+                    onClick={debugContributors}
+                    className="flex-1 text-xs"
+                  >
+                    Debug
+                  </Button>
+                  <Button
+                    variant="outline"
+                    size="sm"
+                    onClick={clearAllContributors}
+                    className="flex-1 text-xs"
+                  >
+                    Clear All
+                  </Button>
+                </div>
+              )}
             </div>
           </motion.div>
         </>

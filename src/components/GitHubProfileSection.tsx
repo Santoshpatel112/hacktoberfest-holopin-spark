@@ -53,23 +53,23 @@ export const GitHubProfileSection = () => {
             ],
       };
 
-      const newContributor = addContributor(contributorData);
+      const result = addContributor(contributorData);
 
-      if (!existingContributor) {
+      if (result.isNew) {
         toast.success(
           "🎉 Welcome to the community! You've been added to our contributors list!"
         );
         // Trigger a custom event to animate the navbar counter
         window.dispatchEvent(
           new CustomEvent("contributorAdded", {
-            detail: { contributor: newContributor, isNew: true },
+            detail: { contributor: result.contributor, isNew: true },
           })
         );
       } else {
         toast.success("🎉 Welcome back! Your profile has been updated!");
         window.dispatchEvent(
           new CustomEvent("contributorAdded", {
-            detail: { contributor: newContributor, isNew: false },
+            detail: { contributor: result.contributor, isNew: false },
           })
         );
       }
@@ -216,6 +216,20 @@ export const GitHubProfileSection = () => {
                   >
                     Clear Profile
                   </Button>
+                  
+                  {/* Debug button for testing */}
+                  {process.env.NODE_ENV === 'development' && (
+                    <Button
+                      variant="outline"
+                      size="sm"
+                      onClick={() => {
+                        console.log('Current localStorage contributors:', localStorage.getItem('communityContributors'));
+                        console.log('Current profile:', profile);
+                      }}
+                    >
+                      Debug Data
+                    </Button>
+                  )}
                 </div>
               </motion.div>
             )}

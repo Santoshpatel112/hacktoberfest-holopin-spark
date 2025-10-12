@@ -11,7 +11,7 @@ export interface Contributor {
 
 export const contributors: Contributor[] = [
   {
-    id: "1",
+    id: "initial-1",
     name: "Santosh Patel",
     githubUsername: "Santoshpatel100",
     avatarUrl: "https://github.com/Santoshpatel100.png",
@@ -21,7 +21,7 @@ export const contributors: Contributor[] = [
     badges: ["hacktoberfest-2024", "first-contribution"]
   },
   {
-    id: "2",
+    id: "initial-2",
     name: "Alex Johnson",
     githubUsername: "alexjohnson",
     avatarUrl: "https://github.com/alexjohnson.png",
@@ -31,7 +31,7 @@ export const contributors: Contributor[] = [
     badges: ["hacktoberfest-2024"]
   },
   {
-    id: "3",
+    id: "initial-3",
     name: "Sarah Chen",
     githubUsername: "sarahchen",
     avatarUrl: "https://github.com/sarahchen.png",
@@ -39,26 +39,6 @@ export const contributors: Contributor[] = [
     contributions: 12,
     joinedDate: "2024-09-28",
     badges: ["hacktoberfest-2024", "mentor"]
-  },
-  {
-    id: "4",
-    name: "Mike Rodriguez",
-    githubUsername: "mikerodriguez",
-    avatarUrl: "https://github.com/mikerodriguez.png",
-    profileUrl: "https://github.com/mikerodriguez",
-    contributions: 6,
-    joinedDate: "2024-10-08",
-    badges: ["hacktoberfest-2024"]
-  },
-  {
-    id: "5",
-    name: "Emma Wilson",
-    githubUsername: "emmawilson",
-    avatarUrl: "https://github.com/emmawilson.png",
-    profileUrl: "https://github.com/emmawilson",
-    contributions: 20,
-    joinedDate: "2024-09-25",
-    badges: ["hacktoberfest-2024", "top-contributor", "mentor"]
   }
 ];
 
