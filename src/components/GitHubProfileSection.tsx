@@ -1,11 +1,12 @@
 import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef, useState } from "react";
-import { Github, Linkedin, ExternalLink } from "lucide-react";
+import { Github, Linkedin, ExternalLink, Users } from "lucide-react";
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { toast } from "sonner";
+import { useContributors } from "@/hooks/useContributors";
 
 export const GitHubProfileSection = () => {
   const ref = useRef(null);
@@ -13,6 +14,7 @@ export const GitHubProfileSection = () => {
   const [username, setUsername] = useState("");
   const [profile, setProfile] = useState<any>(null);
   const [loading, setLoading] = useState(false);
+  const { addContributor, getContributorByUsername } = useContributors();
 
   const fetchGitHubProfile = async () => {
     if (!username) {
@@ -27,8 +29,52 @@ export const GitHubProfileSection = () => {
       const data = await response.json();
       setProfile(data);
       localStorage.setItem("githubProfile", JSON.stringify(data));
+
+      // Add user to contributors (always update with latest data)
+      const existingContributor = getContributorByUsername(data.login);
+      const contributorData = {
+        name: data.name || data.login,
+        githubUsername: data.login,
+        avatarUrl: data.avatar_url,
+        profileUrl: data.html_url,
+        contributions: existingContributor
+          ? existingContributor.contributions + 1
+          : Math.max(1, data.public_repos || 1),
+        joinedDate: existingContributor
+          ? existingContributor.joinedDate
+          : new Date().toISOString().split("T")[0],
+        badges: existingContributor
+          ? existingContributor.badges
+          : [
+              "hacktoberfest-2024",
+              "new-member",
+              ...(data.public_repos > 10 ? ["active-developer"] : []),
+              ...(data.followers > 50 ? ["popular"] : []),
+            ],
+      };
+
+      const newContributor = addContributor(contributorData);
+
+      if (!existingContributor) {
+        toast.success(
+          "🎉 Welcome to the community! You've been added to our contributors list!"
+        );
+        // Trigger a custom event to animate the navbar counter
+        window.dispatchEvent(
+          new CustomEvent("contributorAdded", {
+            detail: { contributor: newContributor, isNew: true },
+          })
+        );
+      } else {
+        toast.success("🎉 Welcome back! Your profile has been updated!");
+        window.dispatchEvent(
+          new CustomEvent("contributorAdded", {
+            detail: { contributor: newContributor, isNew: false },
+          })
+        );
+      }
+
       window.dispatchEvent(new Event("profileUpdated"));
-      toast.success("🎉 Welcome to the community!");
     } catch (error) {
       toast.error("User not found. Please check the username.");
       setProfile(null);
@@ -58,7 +104,8 @@ export const GitHubProfileSection = () => {
             <span className="gradient-text">Join the Community</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Connect your GitHub profile and showcase your contributions to the world.
+            Connect your GitHub profile and showcase your contributions to the
+            world.
           </p>
         </motion.div>
 
@@ -101,20 +148,40 @@ export const GitHubProfileSection = () => {
                   whileHover={{ scale: 1.05 }}
                   transition={{ type: "spring", stiffness: 300 }}
                 />
-                <h3 className="text-2xl font-bold mb-2">{profile.name || profile.login}</h3>
-                <p className="text-muted-foreground mb-4">{profile.bio || "Open source contributor"}</p>
-                
+                <h3 className="text-2xl font-bold mb-2 flex items-center gap-2">
+                  {profile.name || profile.login}
+                  {getContributorByUsername(profile.login) && (
+                    <motion.div
+                      initial={{ scale: 0 }}
+                      animate={{ scale: 1 }}
+                      className="flex items-center gap-1 px-2 py-1 bg-primary/20 text-primary rounded-full text-xs font-medium"
+                    >
+                      <Users className="h-3 w-3" />
+                      Contributor
+                    </motion.div>
+                  )}
+                </h3>
+                <p className="text-muted-foreground mb-4">
+                  {profile.bio || "Open source contributor"}
+                </p>
+
                 <div className="flex gap-6 mb-6 text-sm">
                   <motion.div whileHover={{ scale: 1.1 }}>
-                    <p className="font-bold text-xl gradient-text">{profile.public_repos}</p>
+                    <p className="font-bold text-xl gradient-text">
+                      {profile.public_repos}
+                    </p>
                     <p className="text-muted-foreground">Repositories</p>
                   </motion.div>
                   <motion.div whileHover={{ scale: 1.1 }}>
-                    <p className="font-bold text-xl gradient-text">{profile.followers}</p>
+                    <p className="font-bold text-xl gradient-text">
+                      {profile.followers}
+                    </p>
                     <p className="text-muted-foreground">Followers</p>
                   </motion.div>
                   <motion.div whileHover={{ scale: 1.1 }}>
-                    <p className="font-bold text-xl gradient-text">{profile.following}</p>
+                    <p className="font-bold text-xl gradient-text">
+                      {profile.following}
+                    </p>
                     <p className="text-muted-foreground">Following</p>
                   </motion.div>
                 </div>
@@ -126,7 +193,11 @@ export const GitHubProfileSection = () => {
                     asChild
                     className="bg-primary hover:bg-primary/90 glow-pink"
                   >
-                    <a href={profile.html_url} target="_blank" rel="noopener noreferrer">
+                    <a
+                      href={profile.html_url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
                       <Github className="mr-2 h-4 w-4" />
                       View GitHub Profile
                       <ExternalLink className="ml-2 h-3 w-3" />
