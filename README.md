@@ -1,7 +1,8 @@
 <div align="center">
 
 # 🎃 Hacktoberfest × Holopin 🏆
-### *Celebrate Open Source with Style*
+
+### _Celebrate Open Source with Style_
 
 <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=22&duration=3000&pause=1000&color=FF6B35&center=true&vCenter=true&width=600&lines=Welcome+to+Hacktoberfest+2025!;Contribute+%E2%80%A2+Collaborate+%E2%80%A2+Celebrate;Earn+Digital+Badges+with+Holopin;Join+the+Global+Developer+Community" alt="Typing SVG" />
 
@@ -32,7 +33,8 @@
 <br><br>
 
 ### 🚀 **Modern React + TypeScript + Vite Starter**
-*Built for the open source community with love* ❤️
+
+_Built for the open source community with love_ ❤️
 
 </div>
 
@@ -47,18 +49,21 @@
 <td align="center" width="33%">
 
 ### ⚡ **Lightning Fast**
+
 Built with Vite for instant hot reload and blazing fast builds
 
 </td>
 <td align="center" width="33%">
 
 ### 🎨 **Beautiful UI**
+
 Modern design with shadcn/ui components and Tailwind CSS
 
 </td>
 <td align="center" width="33%">
 
 ### 🔒 **Type Safe**
+
 Full TypeScript support for better developer experience
 
 </td>
@@ -66,7 +71,6 @@ Full TypeScript support for better developer experience
 </table>
 
 </div>
-
 
 <div align="center">
 
@@ -82,6 +86,7 @@ Full TypeScript support for better developer experience
 <td align="center" width="50%">
 
 ### 🛠️ **Developer Experience**
+
 - ⚡ **Vite** - Lightning fast build tool
 - 🔷 **TypeScript** - Type safety & IntelliSense
 - 🔍 **ESLint** - Code linting and formatting
@@ -92,6 +97,7 @@ Full TypeScript support for better developer experience
 <td align="center" width="50%">
 
 ### 🎨 **Modern UI/UX**
+
 - ⚛️ **React 18** - Latest features & concurrent rendering
 - 🎨 **shadcn/ui** - Beautiful, accessible components
 - 🎯 **Tailwind CSS** - Utility-first styling
@@ -106,7 +112,8 @@ Full TypeScript support for better developer experience
 <div align="center">
 
 ### 🌈 **Animation & Interactions**
-*Smooth animations powered by Framer Motion*
+
+_Smooth animations powered by Framer Motion_
 
 <img src="https://user-images.githubusercontent.com/74038190/212257467-871d32b7-e401-42e8-a166-fcfd7baa4c6b.gif" width="100">
 
@@ -128,6 +135,7 @@ Full TypeScript support for better developer experience
 <td align="center" width="25%">
 
 **Frontend**
+
 - React 18
 - TypeScript
 - Vite
@@ -136,6 +144,7 @@ Full TypeScript support for better developer experience
 <td align="center" width="25%">
 
 **Styling**
+
 - Tailwind CSS
 - shadcn/ui
 - Framer Motion
@@ -144,6 +153,7 @@ Full TypeScript support for better developer experience
 <td align="center" width="25%">
 
 **Tools**
+
 - ESLint
 - Prettier
 - Lucide Icons
@@ -152,6 +162,7 @@ Full TypeScript support for better developer experience
 <td align="center" width="25%">
 
 **State & Forms**
+
 - React Query
 - React Hook Form
 - Zod Validation
@@ -296,7 +307,7 @@ Run ESLint
 
 ## 🤝 **Contributing to Open Source**
 
-### *Join the Global Developer Community!*
+### _Join the Global Developer Community!_
 
 <img src="https://contrib.rocks/image?repo=octocat/Hello-World" />
 
@@ -313,7 +324,7 @@ Run ESLint
 <img src="https://user-images.githubusercontent.com/74038190/212257465-7ce8d493-cac5-494e-982a-5a9deb852c4b.gif" width="60">
 
 **🎃 Hacktoberfest**
-*Participants*
+_Participants_
 
 </td>
 <td align="center" width="25%">
@@ -321,7 +332,7 @@ Run ESLint
 <img src="https://user-images.githubusercontent.com/74038190/212257468-1e9a91f1-b626-4baa-b15d-5c385dfa7ed2.gif" width="60">
 
 **🏆 Holopin**
-*Badge Collectors*
+_Badge Collectors_
 
 </td>
 <td align="center" width="25%">
@@ -329,7 +340,7 @@ Run ESLint
 <img src="https://user-images.githubusercontent.com/74038190/212257463-4d082cb4-7483-4eaf-bc25-6dde2628aabd.gif" width="60">
 
 **👨‍💻 Open Source**
-*Enthusiasts*
+_Enthusiasts_
 
 </td>
 <td align="center" width="25%">
@@ -337,7 +348,7 @@ Run ESLint
 <img src="https://user-images.githubusercontent.com/74038190/212257461-58e91aed-f2a0-462e-aef2-5c6a2dd36c3d.gif" width="60">
 
 **🌱 First-time**
-*Contributors*
+_Contributors_
 
 </td>
 </tr>
@@ -393,6 +404,7 @@ git push origin feature/amazing-feature
 <td align="center" width="33%">
 
 ### 🐛 **Bug Fixes**
+
 - Fix reported issues
 - Improve error handling
 - Performance optimizations
@@ -401,6 +413,7 @@ git push origin feature/amazing-feature
 <td align="center" width="33%">
 
 ### ✨ **New Features**
+
 - Add new components
 - Implement animations
 - Create interactive elements
@@ -409,6 +422,7 @@ git push origin feature/amazing-feature
 <td align="center" width="33%">
 
 ### 📚 **Documentation**
+
 - Improve README
 - Add code comments
 - Create tutorials
@@ -419,6 +433,7 @@ git push origin feature/amazing-feature
 <td align="center" width="33%">
 
 ### 🎨 **UI/UX**
+
 - Enhance design
 - Improve accessibility
 - Mobile responsiveness
@@ -427,6 +442,7 @@ git push origin feature/amazing-feature
 <td align="center" width="33%">
 
 ### 🧪 **Testing**
+
 - Add unit tests
 - Integration tests
 - E2E testing
@@ -435,6 +451,7 @@ git push origin feature/amazing-feature
 <td align="center" width="33%">
 
 ### 🌐 **Accessibility**
+
 - ARIA labels
 - Keyboard navigation
 - Screen reader support
@@ -525,7 +542,7 @@ npm run preview
 <img src="https://skillicons.dev/icons?i=vercel" width="60">
 
 **Vercel**
-*Automatic deployments*
+_Automatic deployments_
 [Deploy Now](https://vercel.com/new)
 
 </td>
@@ -534,7 +551,7 @@ npm run preview
 <img src="https://skillicons.dev/icons?i=netlify" width="60">
 
 **Netlify**
-*Drag & drop or Git*
+_Drag & drop or Git_
 [Deploy Now](https://netlify.com/drop)
 
 </td>
@@ -543,7 +560,7 @@ npm run preview
 <img src="https://skillicons.dev/icons?i=github" width="60">
 
 **GitHub Pages**
-*GitHub Actions*
+_GitHub Actions_
 [Setup Guide](https://pages.github.com/)
 
 </td>
@@ -552,7 +569,7 @@ npm run preview
 <img src="https://railway.app/brand/logo-light.svg" width="60">
 
 **Railway**
-*Instant deployment*
+_Instant deployment_
 [Deploy Now](https://railway.app/)
 
 </td>
@@ -577,7 +594,7 @@ npm run preview
 name: 🚀 Deploy to Production
 on:
   push:
-    branches: [ main ]
+    branches: [main]
 jobs:
   deploy:
     runs-on: ubuntu-latest
@@ -595,7 +612,7 @@ jobs:
 
 ## 🎃 **Hacktoberfest 2025** 🎃
 
-### *A Month-Long Celebration of Open Source*
+### _A Month-Long Celebration of Open Source_
 
 <img src="https://hacktoberfest.com/_next/static/media/logo-hacktoberfest--horizontal.ebc5fdc8.svg" width="400">
 
@@ -605,7 +622,7 @@ jobs:
 
 ### 🌟 **What is Hacktoberfest?**
 
-Hacktoberfest is a **month-long celebration** of open source software run by **DigitalOcean**. 
+Hacktoberfest is a **month-long celebration** of open source software run by **DigitalOcean**.
 Join thousands of developers worldwide in contributing to open source projects!
 
 <table>
@@ -615,7 +632,7 @@ Join thousands of developers worldwide in contributing to open source projects!
 <img src="https://user-images.githubusercontent.com/74038190/212257454-16e3712e-945a-4ca2-b238-408ad0bf87e6.gif" width="80">
 
 **🚀 Register**
-*Sign up at hacktoberfest.com*
+_Sign up at hacktoberfest.com_
 
 </td>
 <td align="center" width="25%">
@@ -623,7 +640,7 @@ Join thousands of developers worldwide in contributing to open source projects!
 <img src="https://user-images.githubusercontent.com/74038190/212257472-08e52665-c503-4bd9-aa20-f5a4dae769b5.gif" width="80">
 
 **💻 Contribute**
-*Make 4 quality PRs*
+_Make 4 quality PRs_
 
 </td>
 <td align="center" width="25%">
@@ -631,7 +648,7 @@ Join thousands of developers worldwide in contributing to open source projects!
 <img src="https://user-images.githubusercontent.com/74038190/212257467-871d32b7-e401-42e8-a166-fcfd7baa4c6b.gif" width="80">
 
 **🏆 Earn Badges**
-*Get Holopin rewards*
+_Get Holopin rewards_
 
 </td>
 <td align="center" width="25%">
@@ -639,7 +656,7 @@ Join thousands of developers worldwide in contributing to open source projects!
 <img src="https://user-images.githubusercontent.com/74038190/212257465-7ce8d493-cac5-494e-982a-5a9deb852c4b.gif" width="80">
 
 **🎁 Get Swag**
-*Receive exclusive items*
+_Receive exclusive items_
 
 </td>
 </tr>
@@ -651,13 +668,13 @@ Join thousands of developers worldwide in contributing to open source projects!
 
 <div align="center">
 
-| ✅ **DO** | ❌ **DON'T** |
-|-----------|--------------|
-| Make meaningful contributions | Submit spam PRs |
-| Follow project guidelines | Ignore code quality |
+| ✅ **DO**                       | ❌ **DON'T**                   |
+| ------------------------------- | ------------------------------ |
+| Make meaningful contributions   | Submit spam PRs                |
+| Follow project guidelines       | Ignore code quality            |
 | Be respectful and collaborative | Rush for quantity over quality |
-| Test your changes | Break existing functionality |
-| Write clear commit messages | Use generic commit messages |
+| Test your changes               | Break existing functionality   |
+| Write clear commit messages     | Use generic commit messages    |
 
 </div>
 
@@ -681,7 +698,7 @@ graph TD
 
 ## 🏆 **Holopin Digital Badges** 🏆
 
-### *Collect, Display, and Celebrate Your Contributions!*
+### _Collect, Display, and Celebrate Your Contributions!_
 
 <img src="https://holopin.io/logo.svg" width="200">
 
@@ -698,7 +715,7 @@ graph TD
 <img src="https://user-images.githubusercontent.com/74038190/212257465-7ce8d493-cac5-494e-982a-5a9deb852c4b.gif" width="60">
 
 **🥇 First Contribution**
-*Make your first PR*
+_Make your first PR_
 
 </td>
 <td align="center" width="20%">
@@ -706,7 +723,7 @@ graph TD
 <img src="https://user-images.githubusercontent.com/74038190/212257463-4d082cb4-7483-4eaf-bc25-6dde2628aabd.gif" width="60">
 
 **🐛 Bug Hunter**
-*Fix a reported issue*
+_Fix a reported issue_
 
 </td>
 <td align="center" width="20%">
@@ -714,7 +731,7 @@ graph TD
 <img src="https://user-images.githubusercontent.com/74038190/212257468-1e9a91f1-b626-4baa-b15d-5c385dfa7ed2.gif" width="60">
 
 **✨ Feature Creator**
-*Add a new feature*
+_Add a new feature_
 
 </td>
 <td align="center" width="20%">
@@ -722,7 +739,7 @@ graph TD
 <img src="https://user-images.githubusercontent.com/74038190/212257461-58e91aed-f2a0-462e-aef2-5c6a2dd36c3d.gif" width="60">
 
 **📚 Documentation**
-*Improve docs*
+_Improve docs_
 
 </td>
 <td align="center" width="20%">
@@ -730,7 +747,7 @@ graph TD
 <img src="https://user-images.githubusercontent.com/74038190/212257467-871d32b7-e401-42e8-a166-fcfd7baa4c6b.gif" width="60">
 
 **🎨 Design Master**
-*Enhance UI/UX*
+_Enhance UI/UX_
 
 </td>
 </tr>
@@ -743,25 +760,25 @@ graph TD
 <td align="center" width="25%">
 
 **🔥 Streak Master**
-*5+ consecutive contributions*
+_5+ consecutive contributions_
 
 </td>
 <td align="center" width="25%">
 
 **🚀 Performance Guru**
-*Optimize app performance*
+_Optimize app performance_
 
 </td>
 <td align="center" width="25%">
 
 **🧪 Testing Champion**
-*Add comprehensive tests*
+_Add comprehensive tests_
 
 </td>
 <td align="center" width="25%">
 
 **🌐 Accessibility Hero**
-*Improve accessibility*
+_Improve accessibility_
 
 </td>
 </tr>
@@ -779,9 +796,9 @@ Display your badges proudly on your GitHub profile!
 
 <img src="https://user-images.githubusercontent.com/74038190/212284158-e840e285-664b-44d7-b79b-e264b5e54825.gif" width="100">
 
-## � ***Issues & Feature Requests**
+## � **\*Issues & Feature Requests**
 
-### *Help Us Improve Together!*
+### _Help Us Improve Together!_
 
 </div>
 
@@ -805,7 +822,7 @@ Found a bug or have a brilliant idea? We'd love to hear from you!
 <img src="https://user-images.githubusercontent.com/74038190/212257463-4d082cb4-7483-4eaf-bc25-6dde2628aabd.gif" width="60">
 
 **🐛 Bug Reports**
-*Help us squash bugs*
+_Help us squash bugs_
 [Report Bug](../../issues/new?template=bug_report.md)
 
 </td>
@@ -814,7 +831,7 @@ Found a bug or have a brilliant idea? We'd love to hear from you!
 <img src="https://user-images.githubusercontent.com/74038190/212257468-1e9a91f1-b626-4baa-b15d-5c385dfa7ed2.gif" width="60">
 
 **💡 Feature Requests**
-*Suggest improvements*
+_Suggest improvements_
 [Request Feature](../../issues/new?template=feature_request.md)
 
 </td>
@@ -823,7 +840,7 @@ Found a bug or have a brilliant idea? We'd love to hear from you!
 <img src="https://user-images.githubusercontent.com/74038190/212257461-58e91aed-f2a0-462e-aef2-5c6a2dd36c3d.gif" width="60">
 
 **📖 Documentation**
-*Improve our docs*
+_Improve our docs_
 [Improve Docs](../../issues/new?template=documentation.md)
 
 </td>
@@ -832,7 +849,7 @@ Found a bug or have a brilliant idea? We'd love to hear from you!
 <img src="https://user-images.githubusercontent.com/74038190/212257465-7ce8d493-cac5-494e-982a-5a9deb852c4b.gif" width="60">
 
 **❓ Questions**
-*Get help & support*
+_Get help & support_
 [Ask Question](../../discussions)
 
 </td>
@@ -859,7 +876,7 @@ Found a bug or have a brilliant idea? We'd love to hear from you!
 
 ## 🔧 **Development Guidelines**
 
-### *Code with Style and Purpose*
+### _Code with Style and Purpose_
 
 </div>
 
@@ -872,6 +889,7 @@ Found a bug or have a brilliant idea? We'd love to hear from you!
 <td align="center" width="33%">
 
 ### 🎯 **Code Style**
+
 - ✅ Use TypeScript for type safety
 - ✅ Follow ESLint rules
 - ✅ Use Prettier for formatting
@@ -881,6 +899,7 @@ Found a bug or have a brilliant idea? We'd love to hear from you!
 <td align="center" width="33%">
 
 ### 🧩 **Component Guidelines**
+
 - ✅ Functional components with hooks
 - ✅ Proper TypeScript interfaces
 - ✅ Follow shadcn/ui patterns
@@ -890,6 +909,7 @@ Found a bug or have a brilliant idea? We'd love to hear from you!
 <td align="center" width="33%">
 
 ### 🧪 **Testing Standards**
+
 - ✅ Unit tests for utilities
 - ✅ Component functionality tests
 - ✅ Responsive design validation
@@ -924,26 +944,163 @@ Found a bug or have a brilliant idea? We'd love to hear from you!
 
 </div>
 
-## 📄 License
+<div align="center">
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+<img src="https://user-images.githubusercontent.com/74038190/212284100-561aa473-3905-4a80-b561-0d28506553ee.gif" width="900">
 
-## 🙏 Acknowledgments
+## � *c*Connect With Me\*\*
 
-- [shadcn/ui](https://ui.shadcn.com/) for the amazing component library
-- [Radix UI](https://www.radix-ui.com/) for accessible primitives
-- [Tailwind CSS](https://tailwindcss.com/) for utility-first styling
-- [Vite](https://vitejs.dev/) for the blazing fast build tool
-- All our amazing contributors! 🎉
+### _Let's Build Amazing Things Together!_
 
-## 📞 Support
+<a href="https://github.com/your-username">
+  <img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" />
+</a>
+<a href="https://linkedin.com/in/your-username">
+  <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" />
+</a>
+<a href="https://twitter.com/your-username">
+  <img src="https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white" />
+</a>
+<a href="mailto:your-email@example.com">
+  <img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" />
+</a>
 
-- 📧 **Email**: [Create an issue](../../issues/new) for support
-- 💬 **Discussions**: Use GitHub Discussions for questions
-- 📖 **Documentation**: Check our docs and README
+### 🌟 **Show Your Support**
+
+If this project helped you, please consider:
+
+<a href="https://github.com/your-username/hacktoberfest-holopin-spark">
+  <img src="https://img.shields.io/badge/⭐_Star_this_repo-yellow?style=for-the-badge" />
+</a>
+<a href="https://github.com/your-username/hacktoberfest-holopin-spark/fork">
+  <img src="https://img.shields.io/badge/🍴_Fork_this_repo-blue?style=for-the-badge" />
+</a>
+
+</div>
 
 ---
 
-**Happy Coding! 🚀**
+<div align="center">
 
-Made with ❤️ for the open source community
+## 📄 **License**
+
+This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) file for details.
+
+![MIT License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)
+
+</div>
+
+---
+
+<div align="center">
+
+## 🙏 **Acknowledgments**
+
+### _Standing on the Shoulders of Giants_
+
+<table>
+<tr>
+<td align="center" width="20%">
+
+<img src="https://ui.shadcn.com/favicon.ico" width="40">
+
+**[shadcn/ui](https://ui.shadcn.com/)**
+_Beautiful components_
+
+</td>
+<td align="center" width="20%">
+
+<img src="https://www.radix-ui.com/favicon.ico" width="40">
+
+**[Radix UI](https://www.radix-ui.com/)**
+_Accessible primitives_
+
+</td>
+<td align="center" width="20%">
+
+<img src="https://tailwindcss.com/favicon.ico" width="40">
+
+**[Tailwind CSS](https://tailwindcss.com/)**
+_Utility-first styling_
+
+</td>
+<td align="center" width="20%">
+
+<img src="https://vitejs.dev/logo.svg" width="40">
+
+**[Vite](https://vitejs.dev/)**
+_Lightning fast builds_
+
+</td>
+<td align="center" width="20%">
+
+<img src="https://react.dev/favicon.ico" width="40">
+
+**[React](https://react.dev/)**
+_UI library_
+
+</td>
+</tr>
+</table>
+
+### 🎉 **Special Thanks**
+
+<img src="https://contrib.rocks/image?repo=octocat/Hello-World" />
+
+_All our amazing contributors who make this project possible!_
+
+</div>
+
+---
+
+<div align="center">
+
+## 📞 **Support & Help**
+
+<table>
+<tr>
+<td align="center" width="33%">
+
+<img src="https://user-images.githubusercontent.com/74038190/212257465-7ce8d493-cac5-494e-982a-5a9deb852c4b.gif" width="60">
+
+**📧 Email Support**
+[Create an Issue](../../issues/new)
+
+</td>
+<td align="center" width="33%">
+
+<img src="https://user-images.githubusercontent.com/74038190/212257468-1e9a91f1-b626-4baa-b15d-5c385dfa7ed2.gif" width="60">
+
+**💬 Discussions**
+[GitHub Discussions](../../discussions)
+
+</td>
+<td align="center" width="33%">
+
+<img src="https://user-images.githubusercontent.com/74038190/212257461-58e91aed-f2a0-462e-aef2-5c6a2dd36c3d.gif" width="60">
+
+**📖 Documentation**
+[Read the Docs](../../wiki)
+
+</td>
+</tr>
+</table>
+
+</div>
+
+---
+
+<div align="center">
+
+<img src="https://user-images.githubusercontent.com/74038190/212284158-e840e285-664b-44d7-b79b-e264b5e54825.gif" width="400">
+
+### **Happy Coding! 🚀**
+
+<img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=18&duration=2000&pause=1000&color=FF6B35&center=true&vCenter=true&width=600&lines=Made+with+%E2%9D%A4%EF%B8%8F+for+the+Open+Source+Community;Hacktoberfest+2025+%E2%80%A2+Holopin+Badges;Join+Us+in+Celebrating+Open+Source!" alt="Typing SVG" />
+
+<br>
+
+[![Hacktoberfest](https://img.shields.io/badge/Hacktoberfest-2025-FF6B35?style=for-the-badge&logo=hacktoberfest&logoColor=white)](https://hacktoberfest.com/)
+[![Holopin](https://img.shields.io/badge/Holopin-Badges-4C51BF?style=for-the-badge&logo=holopin&logoColor=white)](https://holopin.io/)
+
+</div>
