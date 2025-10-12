@@ -24,11 +24,11 @@
 
 ## 🌟 **Animated Showcase** 🌟
 
-<img src="https://hacktoberfest.com/_next/static/media/logo-hacktoberfest--logomark.b91c17d2.svg" alt="Hacktoberfest Logo" width="120" height="120"/>
+<img src="https://hacktoberfest.com/_next/static/media/logo-hacktoberfest-12--nav.0ac01b46.svg" alt="Hacktoberfest Logo" width="150" height="60"/>
 &nbsp;&nbsp;&nbsp;&nbsp;
 <img src="https://user-images.githubusercontent.com/74038190/212257454-16e3712e-945a-4ca2-b238-408ad0bf87e6.gif" width="100">
 &nbsp;&nbsp;&nbsp;&nbsp;
-<img src="https://holopin.io/logo.svg" alt="Holopin Logo" width="120" height="120"/>
+<img src="https://cdn.holopin.io/assets/img/holopin-logo.svg" alt="Holopin Logo" width="150" height="60"/>
 
 <br><br>
 
@@ -615,7 +615,7 @@ jobs:
 
 ### _A Month-Long Celebration of Open Source_
 
-<img src="https://hacktoberfest.com/_next/static/media/logo-hacktoberfest--horizontal.ebc5fdc8.svg" width="400">
+<img src="https://hacktoberfest.com/_next/static/media/logo-hacktoberfest-12--nav.0ac01b46.svg" width="400">
 
 </div>
 
@@ -701,7 +701,7 @@ graph TD
 
 ### _Collect, Display, and Celebrate Your Contributions!_
 
-<img src="https://holopin.io/logo.svg" width="200">
+<img src="https://cdn.holopin.io/assets/img/holopin-logo.svg" width="200">
 
 </div>
 
